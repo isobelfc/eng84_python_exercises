@@ -73,3 +73,13 @@ User stories:
 - Defined a method `fizzbuzz_individual(num)` which returns "Fizz", "Buzz", "Fizzbuzz", or the number according to the rules above when given a single number
 - Defined a method `fizzbuzz_one_to_hundred()`, which uses the `fizzbuzz_individual` method to return the numbers 1-100 according to the Fizzbuzz rules
 - To call `fizzbuzz_individual` in the new method, it must be written as a method on the class, i.e. `Fizzbuzz().fizzbuzz_individual(num)`
+
+## Scrabble score calculator
+### Task
+- Given standard Scrabble scoring create a Scrabble word calculator that will provide the correct scores dependent on the string provided
+
+### Documentation
+- A `letter_score` attribute on the `Scrabble` class contains the score of each letter within a dictionary
+- A method `calculate_score()` sets a `score` variable to 0, and then iterates over each letter in the argument
+- It references the `letter_score` dictionary and adds the score of each letter to `score`
+- `score` is then returned
