@@ -50,4 +50,16 @@ User stories:
 
 ## Xmas Holiday list that never ends
 
-## Fizz Buzz
+## Fizzbuzz
+### The problem
+- Write a program that prints the numbers from 1 to 100
+- But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”
+- For numbers which are multiples of both three and five print “FizzBuzz”
+- Must be in class and method format
+
+### Documentation
+- Defined `Fizzbuzz` as a class
+- Defined `fizz_nums`, `buzz_nums`, and `fizzbuzz_nums` as attributes referring to the divisors of the numbers that should be replaced by them
+- Defined a method `fizzbuzz_individual(num)` which returns "Fizz", "Buzz", "Fizzbuzz", or the number according to the rules above when given a single number
+- Defined a method `fizzbuzz_one_to_hundred()`, which uses the `fizzbuzz_individual` method to return the numbers 1-100 according to the Fizzbuzz rules
+- To call `fizzbuzz_individual` in the new method, it must be written as a method on the class, i.e. `Fizzbuzz().fizzbuzz_individual(num)`
