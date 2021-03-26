@@ -72,6 +72,13 @@ User stories:
    - 1 - RC car
    - 2 - PS2
    - 3 - GTA Vice City
+    
+## DRY Code and Functions
+### Tasks
+- Make a loop with a range that says hello 10 times
+- Create another loop with a range that asks for names and appends to list names
+- Make a loop that iterates over each name in lit_name and formats it into lowercase in a new variable called list names lower
+- Iterate over a list of values to find if they are even
 
 ## Fizzbuzz
 ### The problem
@@ -96,3 +103,7 @@ User stories:
 - A method `calculate_score()` sets a `score` variable to 0, and then iterates over each letter in the argument
 - It references the `letter_score` dictionary and adds the score of each letter to `score`
 - `score` is then returned
+
+## Control flow age and permission
+
+## Dictionary basics
