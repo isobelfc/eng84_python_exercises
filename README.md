@@ -48,6 +48,16 @@ User stories:
 - has documentation
 - follows best practices
 
+### Documentation
+- The menu is created as a list containing each menu item
+- To display the menu, I printed a heading, and then iterated over each menu item and printed it
+- I created an `ordering` variable, which was set to `True`
+- While `ordering` remains `True`, the user is asked to input a menu item to order
+- If the input matches a menu item, it is added to an `order_items` list, and a confirmation message is printed
+- If the input does not match, the user is prompted to try again
+- If the letter "x" is input, `ordering` is set to `False` and the loop ends
+- To read back the order, I used a `print()` statement for the heading, and then iterated over each item in the order with `print()`
+
 ## Xmas Holiday list that never ends
 
 ## Fizzbuzz
