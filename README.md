@@ -106,4 +106,49 @@ User stories:
 
 ## Control flow age and permission
 
+### Documentation
+- I asked for the user's age with a while loop, which kept iterating until the age was correctly entered as a digit. It then cast age to an integer
+```python
+age_check = True
+while age_check:
+    age = input("How old are you? ")
+    if age.isdigit():
+        age = int(age)  # casts to integer so that we can compare it
+        age_check = False  # ends loop when age is correct
+    else:
+        print("Please enter your age in digits")
+```
+- I then asked whether the user had a driving licence, again using a while loop to make sure that either "Y" or "N" were entered
+```python
+# check for driving licence
+licence_check = True
+while licence_check:
+    driver_licence_input = input("Do you have a driver's licence? Y/N ")
+    if driver_licence_input in ("Y", "N"):
+        licence_check = False  # ends loop if one of expected input
+    else:
+        print("Please answer 'Y' or 'N'")
+```
+- I used `if`, `elif`, and `else` to first check whether the user was both over 18 and had a licence, and printed the relevant permissions.
+- I then checked whether they were over 18 (but without a licence) and then whether they had a licence while being under 18, and printed the relevant permissions.
+- Next I checked whether they were over 16, and if they were printed the relevant permissions.
+- Finally I printed a final statement if the user was under 16.
+
 ## Dictionary basics
+
+### Documentation
+- I defined the initial dictionary using `story1 = {}` and adding key:value pairs
+```python
+story1 = {
+    "start": "Once upon a type there was a brave little fox cub",
+    "middle": "One day while trotting through the forest he met a magpie who tried to sell him some dubious meat",
+    "end": "He scared the magpie off with a growl and returned safely home"
+}
+```
+- I printed the entire dictionary with `print(story1)` and then the type by using `print(type(story1))`
+- I printed only the keys using `print(story1.keys())` and then only the values using `print(story1.values())`
+- To print the individual values I put the matching key in square brackets, e.g. `print(story1["start"])`
+- Finally, I added a new key value pair
+```python
+story1["hero"] = "a brave little fox"
+```
